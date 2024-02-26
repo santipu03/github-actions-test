@@ -1,0 +1,13 @@
+name: Hello Workflow
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log Hello
+        run: echo "Hello, every time a push is made to the main branch!"
