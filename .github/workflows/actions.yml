@@ -19,6 +19,6 @@ jobs:
           cd ${{ github.workspace }}
           echo "Action desplegant a produccio" > ./web/last_deploy.txt
           date >> ./web/last_deploy.txt
-          scp -r -o stricthostkeychecking=no -o UserKnownHostsFile=/dev/null -i "~/prod_key.pem" ./web/* ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:/home/ebota/web/actions.daw.inspedralbes.cat/public_html/
+          scp -r -o stricthostkeychecking=no -o UserKnownHostsFile=/dev/null -i "~/prod_key.pem" ./web/* ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:/home/a22sanpujsau/web/actions.a22sanpujsau.daw.inspedralbes.cat/public_html/
           
       - run: echo "🍏 This job's status is ${{ job.status }}."
