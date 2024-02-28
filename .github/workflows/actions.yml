@@ -14,13 +14,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16.x' # Match this version with your project requirements
+          node-version: '21.x'
       - name: Install npm dependencies
         run: npm install
-        working-directory: ./vue-project # Ensure dependencies are installed in the vue-project directory
+        working-directory: ./vue-project
       - name: Run ESLint
         run: npm run lint
-        working-directory: ./vue-project # Run ESLint in the vue-project directory
+        working-directory: ./vue-project
   
 
   build:
