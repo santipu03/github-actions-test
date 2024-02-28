@@ -11,7 +11,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest'
   },
-  // rules: {
-  //   'no-console': "error"
-  // }
+  rules: {
+    'no-console': "error"
+  }
 }
