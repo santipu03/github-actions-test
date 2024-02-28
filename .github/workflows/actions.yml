@@ -19,7 +19,7 @@ jobs:
         run: npm install
         working-directory: ./vue-project # Ensure dependencies are installed in the vue-project directory
       - name: Run ESLint
-        run: npx eslint . --ext .js,.jsx,.ts,.tsx
+        run: npm run lint
         working-directory: ./vue-project # Run ESLint in the vue-project directory
   
 

@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <button v-for="number in 10" :key="number" @click="handleClick(number)">
+  <div class="button-grid">
+    <button v-for="number in 9" :key="number" @click="handleClick(number)">
       {{ number }}
     </button>
   </div>
@@ -15,3 +15,11 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+</style>
